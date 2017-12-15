@@ -26,8 +26,8 @@ def main():
     #-----------------func------------------------
     def read_btn():#读取自定义按钮
         global btn_list
-        if os.path.exists('btn1.txt'):
-            with codecs.open('btn1.txt', 'r', 'utf-8') as f:
+        if os.path.exists('btn.txt'):
+            with codecs.open('btn.txt', 'r', 'utf-8') as f:
                 btn_list = [i.strip() for i in f.readlines() if i.strip() != '']
 
     def start_thread(func, *myargs):#开启多线程
